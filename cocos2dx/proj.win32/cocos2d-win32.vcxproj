@@ -70,7 +70,7 @@
     </ClCompile>
     <PreLinkEvent>
       <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
-xcopy /Y /Q "$(SolutionDir)cocos2dx\platform\third_party\win32\libraries\*.*" "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)\..\platform\third_party\win32\libraries\*.*" "$(OutDir)"
 </Command>
     </PreLinkEvent>
     <Link>
